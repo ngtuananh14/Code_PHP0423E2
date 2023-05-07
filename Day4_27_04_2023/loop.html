@@ -1,0 +1,24 @@
+loop.html
+- Vòng lặp: lặp đi lặp lại logic giống nhau
+- for, while, do ... while
+- Luôn luôn tránh vòng lập vô hạn
+
+<script type="text/javascript">
+	//Log 500 lần chuỗi Hello 500ae;
+	//1 - for: vòng lặp xác định trước số lần lặp
+	//vd: hiển thị 1 -10
+	//for(khởi tạo vòng lặp ; điều kiện lặp; thay đổi bt 1 tránh lặp vô hạn)
+	for(var i =1; i<=10; i++){
+		console.log(i);
+	}
+	//2 - while: vòng lặp không xác định
+	var j =1;
+	while (j<=10){
+		console.log(j);
+		j++;
+	}
+	//3 - do...while: luôn luôn thực thi code ít nhất 1 lần cho dù đk sai ngay từ đầu
+	do{
+		console.log('test do...while');
+	}while(5<3);
+</script>

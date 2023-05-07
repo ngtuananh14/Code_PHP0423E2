@@ -1,0 +1,67 @@
+operator.html
+Toán tử trong lập trình
+- Là các ký hiệu giúp tính toán các biểu thức 3 + 2 = 5 => số 2,3 là số hạng/ toán hạng, + là  toán tử
+<script type="text/javascript">
+	//1 - Toán tử số học: tính toán các số, kết quả trả về là number
+	var number1 = 8;
+	var number2 = 4;
+	// Phép cộng: +
+	var res1 = number1 + number2; //12
+	// Phép trừ: -
+	var res2 = number1 - number2; //4
+	// Phép nhân: *
+	var res3 = number1 * number2; //20
+	// Phép chia: /
+	var res4 = number1 / number2; //2
+	// Phép chia lấy dư: %
+	var res5 = number1 % number2; //0
+	// Tăng giảm tích lũy: ++,--, tăng giảm 1 đơn vị
+	var number =5;
+	number++; 
+	++number;
+	console.log(number); //6 
+	// Nếu ++,-- đứng trước thì biến sẽ thay đổi trước và ngược lại
+	var num =3;
+	var result= num++ - num--; // =-1
+	// 2 - Toán tử so sánh: so sánh các biểu thức và trả về boolean
+	// Lớn hơn: >
+	var test1 = 3>2; //true
+	// Lớn hơn hoặc bằng: >=
+	var test2 = 3>=2; //true
+	// Nhỏ hơn: <
+	// Nhỏ hơn hoặc bằng: <=
+	// So sánh bằng: ==
+	var test3 = (1 == 2); //false
+	// So sánh === so sánh về cả giá trị và kiểu dữ liệu
+	var test4 = (1 == '1'); //true
+	var test4 = (1 === '1'); //false
+	// So sánh khác: !=
+	var test6 = 2 != 1; //true
+	//3 - Toán tử logic: kết hợp nhiều biểu thức so sánh, kqua trả về boolean
+	//+ &&: and
+	// true && true = true
+	// true && false = false
+	// false && true = false
+	// false && false = false
+	var test7 = (3>0 && 3>=3); //true
+	//+ ||: or
+	// true || true = true
+	// true || false = true
+	// false || true = true
+	// false || false = false
+	var test 8 = (3<3 || 2>=2); //true
+	//+ !: not
+	// !true = false
+	// !false = true
+	var test9 = !(1>0); //false
+	//4 - Toán tủ gán:
+	// =: gán
+	var x = 5;
+	// Cộng tích lũy: +=
+	x += 3; //8
+	// Trừ tích lũy: -=
+	x -=2; // x= x-2 =6
+	// Nhân tích lũy: *=
+	// Chia tích lũy: /=
+	// Chia lấy dư tích lũy: %=
+</script>

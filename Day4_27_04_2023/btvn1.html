@@ -1,0 +1,100 @@
+btvn1.html
+<script type="text/javascript">
+	//bai1
+	function bai1(number1,number2,number3){
+		return number1 * number2 * number3;
+	}
+	console.log("Tich 3 số: " + bai1(1,2,3));
+	//bai2
+	function bai2(number1,number2){
+		var pheptinh = '+';
+		switch(pheptinh){
+			case '+':
+				return number1 + number2;
+				break;
+			case '-':
+				return number1 - number2;
+				break;
+			case '*':
+				return number1 * number2;
+				break;
+			case '/':
+				return number1 / number2;
+				break;
+			default:
+				console.log('không phải phép tính');
+		}
+	}
+	console.log("Phep tinh cua 2 so: " + bai2(2,6));
+	//bai3
+	function bai3(sophut){
+		return sophut*60;
+	}
+	console.log("So phut doi ra giay la: " + bai3(2));
+	//bai4
+	function bai4(ngay){
+		return ngay + 1;
+	}
+	console.log("Ngay ke tiep la: " + bai4(2));
+	//bai5678
+	function bai5678(number1,number2,number){
+		var bai = 'bai5';
+		switch(bai){
+			case 'bai5':
+				return 2*(number1 + number2);
+				break;
+			case 'bai6':
+				return number1 * number2;
+				break;
+			case 'bai7':
+				return number*4;
+				break;
+			case 'bai8':
+				return number*number;
+				break;
+			default:
+				console.log('không phải phép tính');
+		}
+	}
+	console.log("Bai toan la: " + bai5678(2,5,3));
+	//bai9
+	function bai9(number9){
+		var dem =0;
+		for(var i= 1;i<=number9;i++){
+			if(number9 % i == 0){
+				dem++;
+			}
+		}
+		if(dem ==2){
+			console.log(number9 + ' là số nguyên tố');
+		}
+		else{
+			console.log(number9 + ' không phải là số nguyên tố');
+		}
+	}
+	bai9(11);
+	//bai10
+	function bai10(number){
+		if(number % 2 == 0)
+		{
+			return true;
+		}
+		return false;
+	}
+	console.log(bai10(5));
+	//bai11
+	function bai11(gio,phut){
+		return (phut + gio*60)*60;
+	}
+	console.log('Số giây là: ' + bai11(1,30));
+	//bai12
+	function bai12(chuoi){
+		var chuoimoi ="";
+		for(var i=chuoi.length - 1 ;i>=0;i--)
+		{
+			chuoimoi += chuoi[i];
+		}
+		return chuoimoi;
+	}
+	console.log("Chuỗi mới: "+ bai12('Hello'));
+</script>

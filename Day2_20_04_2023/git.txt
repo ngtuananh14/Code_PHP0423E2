@@ -1,0 +1,31 @@
+git.txt
+Kỹ năng cơ bản về Git:
+1 - Git là gì, tại sao cần Git ?
++ Là c
+ông cụ giúp quản lý source code và code nhóm hiệu quả (giống Drive) và code nhóm hiệu quả
+Bài toán: nếu không có git, gộp code giữa các thành viên sẽ bị thủ công -> sai sót
++ Có nhiều dịch vụ cung cấp sẵn Git: Github, Gitlab, Bitbuket, ...
+2 - Demo quản lý source code với Git:
++ Đăng kí tài khoản: github.com
+tk: ngtuananh14
+mk:
++ Tạo repository/ kho lưu trữ để lưu trữ source code
+C:
+cd \
+cd mkdir local_ten_cua_ban
+echo Hello ten_cua_ban > ten_cua_ban.txt
+echo Hello docx file > hello.docx
++ Liên kết source code hiện tại với repo đã tạo trên github:
+- cd vào thư mục chứa source cần liên kết 
+- Khởi tạo trên git trên thư mục hiện tại: git init
+- Liên kết source code hiện tại với repo: git remote add origin https://github.com/ngtuananh14/php0423e2_anhnt.git
+- Kiểm tra link repo: git remote -v
+- git status -> ktra trạng thái file/ thư mục
+- git add đường dẫn file -> thêm file cho git quản lý để chuẩn bị cho bước commit tiếp theo
+- git commit -m "Noi dung mesage cua ban"
+Cam kết các thay đổi sau bước git add
+- git push origin master -> Đẩy các file đã commit lên repo, tại nhánh master
+- Đẩy code lên có 3 bước: git add, git commit, git push
+- Nên tạo repo để lưu trữ source code cho bản thân
+- git clone -> Sao chép source code từ repo có sẵn
+- git pull -> Cập nhật dữ liệu từ repo từ local

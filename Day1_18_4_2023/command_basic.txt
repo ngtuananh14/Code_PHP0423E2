@@ -1,0 +1,12 @@
+command_basic.txt
+Một số command line cơ bản:
++ Mở công cụ gõ command line: cmd, cmder
+D:  -> chuyển sang ổ D
+cd \  -> di chuyển về ổ gốc - change directory
+-> bổ sung kĩ năng đọc hiểu tiếng anh
+Cài extension cho Chrome: Laban, Google Translate
+cd mkdir manhnv_test  -> tạo thư mục
+echo "hello tuan anh"> tan.txt -> tạo file
+ls -l ->  liệt kê file/ thư mục theo từng hàng
+cat tan.txt ->  đọc nội dung file
+cd ..  -> lên 1 cấp thư mục

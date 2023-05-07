@@ -1,0 +1,136 @@
+<!-- demo_html.html
+Ngôn ngữ HTML
+- Hypertext Markup Language: ngôn ngữ đánh dấu siêu văn bản
+- Dùng để thiết kế khung trang Web
+- HTML luôn kết hợp với CSS và JS để tạo thành bộ 3 ngôn ngữ chuyên dùng để thiết kế giao diện Web (Frontend)
+- Học HTMl là học các tag/thẻ cơ bản và cách hiển thị
+- HTML được viết trong file .html hoặc .htm
+1- Cấu trúc 1 trang HTML cơ bản -->
+<!DOCTYPE html>
+<!-- Thẻ HTML có 2 dạng: đầy đủ và khuyết  -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tiêu đề Web</title>
+		<!-- h1 ... h6 - thẻ hiển thị tiêu đề, đầy đủ, heading, tốt cho SEO web-->
+		<h1>H1</h1>
+		<h6>H6</h6>
+		<!-- Thẻ p - hiển thị đoạn văn, đầy đủ - paragraph -->
+		<p>Đoạn 1</p>
+		<p>Đoạn 2</p>
+		<!-- Thẻ br - thẻ xuống dòng trong file HTML, khuyết - break -->
+		Xuống dòng ở đây <br> Nè <br>
+		<!-- Thẻ hr - tạo ra 1 đường kẻ ngang -khuyết - horizontal -->
+		<hr>
+		<!-- Thẻ b - bôi đậm, đầy đủ - bold -->
+		<b>Bôi đen</b>
+		<!-- Thẻ i - in nghiêng,đầy đủ - italic -->
+		<i>In nghiêng</i>
+		<!-- Thẻ u- gạch chân, đầy đủ underline-->
+		<u>gạch chân</u>
+		<!-- Thẻ div - chia các khối, dùng để xây dựng cấu trúc/bố cục trang - đầy đủ - divide -->
+		<div>Thẻ div</div>
+		<!-- Thẻ span - css cho text ngang hàng - đầy đủ -->
+		<span>Thẻ span</span>
+		Màu này là màu <span style="color: red;">đỏ</span>
+		<!-- Thẻ img - hiển thị hình ảnh - khuyết - image
+		+ src: đường dẫn tới file ảnh - source
+		Copy 1 file ảnh bất kì vào cùng cấp/ ngang hàng với file .html hiện tại
+		Có 2 kiểu đường dẫn:
+		Tuyệt đối/ vật lý: C:/abc/dev/hmtl/test.jpg
+		Tương đối: test.jpg -> nên dùng đường dẫn tương đối khi nhúng file
+		+ alt = "Hiển thị text thay thế khi đường dẫn narh không tồn tại - alternative"
+		+ titel = " Hiển thị nội dung khi rẻ chuột qua ảnh"
+		+ width, height = chiều rộng, chiều cao của ảnh
+		 -->
+		<img src="test2.jpg" width="30%" height="30%" alt="https://www.facebook.com/"
+		title="ảnh mèo">
+		<!-- Thẻ table - tr - th - td - cấu trúc bảng - đầy đủ 
+		+ tr - hàng của bảng - table row
+		+ th - cột tiêu đều - table heading
+		+ td - cột dữ liệu của bảng - table data
+		-->
+		<table border="1" cellspacing="0" cellpadding="8">
+			<tr>
+				<th>Tên</th>
+				<th>Tuổi</th>
+			</tr>
+			<tr>
+				<!-- colspan - Gộp cột, đứng từ vị trí cột bắt đầu gộp, khi gộp xong phải xóa cột dư thừa tương ứng -->
+				<td colspan="2">Tuấn Anh</td>
+				<!-- <td>23</td> -->
+			</tr>
+			<tr>
+				rowspan - Gộp hàng, đứng từ vị trí hàng bắt đầu gộp, khi gộp xong phải xóa cột ở hàng tiếp theo tương ứng
+				<td rowspan="2">Mão</td>
+				<td>16</td>	</tr>
+			<tr>
+				<td>Tý</td>
+				<!-- <td>20</td> -->
+			</tr>
+		</table>
+		<!-- Thẻ ul ol li - danh sách, đầy đủ -->
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>			
+		</ul>
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		<!-- Thẻ a - link - đầy đủ - anchor 
+			+ target = _blank mở link trong tab mới
+		-->
+		<a href="https://google.com" target="_blank">Tới gu gồ</a>
+		<!-- Thẻ center - căn giữa - căn đầy đủ - chỉ dùng  với html -->
+		<center>Thẻ center</center>
+		<!-- Thẻ button - nút - đầy đủ -->
+		<button>Thẻ button</button>
+		<!-- Thẻ form, input, textarea, select, option: form -->
+		<form action="" method="post">
+			Nhập text
+			<input type="text" placeholder="Nhập text bất kì..." value="abcde">
+			<br>
+			Nhập số:
+			<input type="number" name="">
+			<br>
+			Nhập email:
+			<input type="email" name="">
+			<br>
+			Nhập mật khẩu:
+			<input type="password" name="">
+			<br>
+			Chọn giới tính:
+			<input type="radio" name="gender">Nam
+			<input type="radio" name="gender">Nữ
+			<input type="radio" name="gender" checked>Khác
+			<br>
+			Chọn nghề nghiệp:
+			<input type="checkbox" name="">Dev
+			<input type="checkbox" name="">Test
+			<input type="checkbox" name="">BA
+			<br>
+			Chọn quốc gia:
+			<select>
+				<option>Việt Nam</option>
+				<option>Japan</option>
+				<option>Korean</option>
+			</select>
+			<br>
+			Upload file:
+			<input type="file" name="">
+			<br>
+			Nhập ghi chú:
+			<textarea></textarea>
+			<br>
+			<!-- Nút submit form -->
+			<input type="submit" value="Gửi thông tin">
+			<input type="reset" value="Reset form" >
+		</form>
+	</head>
+	<body>
+		<br>Say hi
+	</body>
+</html>

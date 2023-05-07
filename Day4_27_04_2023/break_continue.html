@@ -1,0 +1,43 @@
+break_continue.html
+<script type="text/javascript">
+	//Từ khóa break - continue trong vòng lặp
+	//- break: thoát khỏi vòng lặp
+	/*for(var i= 1;i<=10;i++){
+		console.log(i);
+		if(i==5){
+			break;
+		}
+	}*/
+	//- continue: bỏ qua lần lặp hiện tại, nhảy tới lần kế tiếp
+	for(var j=1;j<=10;j++){
+		if (j==2 || j==5) {
+			continue;
+		}
+		console.log(j);
+	}
+	//- Demo viết 1 số hàm
+	//+ hàm ktra chẵn lẻ
+	//- Xđ tham số: 1 tham số cần ktra
+	//- Xđ giá trị trả về: boolean
+	function isEven(number){
+		if(number % 2 == 0)
+		{
+			return true;
+		}
+		return false;
+	}
+	// Gọi hàm
+	var test1 = isEven(5); //var test1 = false
+	console.log(test1);
+	//- Viết hàm ktra số nguyên tố:
+	function check(number){
+		var is_prime = true;
+		for(var i=2;i<Math.sqrt(number);i++){
+			if(number %i ==0){
+				is_prime = false;
+				break;
+			}
+		}
+		return is_prime;
+	}
+</script>
